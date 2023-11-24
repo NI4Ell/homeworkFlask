@@ -10,9 +10,6 @@ def index():
 
 @app.route('/hello')
 def about():
-    if request.args['name'] == 'Petrovich' or request.args['name'] == 'petrovich':
-        return "Hello," + "lox"
-
     return "Hello, " + request.args['name']
 
 
